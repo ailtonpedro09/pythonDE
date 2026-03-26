@@ -15,5 +15,7 @@ if __name__ == '__main__':
     try:
         utils.preparation(df, config)
         logging.info("Fim do processo de ingestão")
+        print("Processo de ingestão concluído com sucesso.")
     except Exception as e:
         logging.error(f"Erro de preparação: {str(e)}")
+        print("Processo de ingestão falhou.")
