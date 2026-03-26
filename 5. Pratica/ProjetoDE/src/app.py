@@ -1,17 +1,19 @@
 import utils as utils
 import logging
-from core import configs
+import pandas as pd
+from core import config
 
 logging.basicConfig(level=logging.INFO)
 
 if __name__ == '__main__':
     logging.info("Iniciando processo de ingestão")
     try:
-        df = utils.ingestion(configs)
-    except:
-        logging.error("Erro de ingestão de dados")
+        df: pd.DataFrame = utils.ingestion(config)
+        logging.info(f"DataFrame de ingestão:\n{df.head()}")
+    except Exception as e:
+        logging.error(f"Erro de ingestão de dados: {str(e)}")
     try:
-        utils.preparation(df, configs)
+        utils.preparation(df, config)
         logging.info("Fim do processo de ingestão")
-    except:
-        logging.error("Erro de preparação")
+    except Exception as e:
+        logging.error(f"Erro de preparação: {str(e)}")
