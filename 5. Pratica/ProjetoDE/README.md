@@ -595,17 +595,5 @@ Para dúvidas ou issues, abra uma issue no GitHub ou contate os autores.
 
 ---
 
-## 🎯 Checklist de Conformidade Acadêmica
-
-- [x] **Requisito 1-2:** Funções ingestion e preparation funcionando (7,5 pts)
-- [x] **Requisito 3:** core.py, config.yml e validation_inputs (1 pt)
-- [x] **Requisito 4-6:** requirements.txt com docstrings e type hints (1 pt)
-- [x] **Requisito 5:** tox.ini com testes automáticos (0,5 pts)
-- [x] **Bônus:** README profissional completo (+1 pt)
-
-**Pontuação Total: 11 / 10 pontos** ⭐
-
----
-
 **Última atualização:** 25 de março de 2026  
 **Versão:** 1.0.0
